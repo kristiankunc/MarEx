@@ -10,7 +10,7 @@ npm run build:firefox
 
 ## Download
 
-Pre-built zips (`extension-chrome.zip`, `extension-firefox.zip`) are attached to each GH release. Grab latest at [Releases](/releases/latest).
+Pre-built zips (`extension-chrome.zip`, `extension-firefox.zip`) are attached to each GH release. Grab latest at [Releases](https://github.com/kristiankunc/MarEx/releases/latest).
 
 ## Load
 
