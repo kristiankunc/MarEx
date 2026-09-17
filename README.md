@@ -17,3 +17,4 @@ Pre-built zips (`extension-chrome.zip`, `extension-firefox.zip`) are attached to
 - Chrome: `chrome://extensions` -> Developer mode -> Load unpacked -> `dist/chrome`
 - Firefox: `about:debugging#/runtime/this-firefox` -> Load Temporary Add-on -> `dist/firefox/manifest.json`
 
+AI Disclosure: This extension was largely AI generated (with human verification).
