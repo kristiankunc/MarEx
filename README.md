@@ -4,9 +4,11 @@ Chrome + Firefox extension for exporting source latex from `marast.fit.cvut.cz` 
 
 ## Build
 
+```bash
 npm install
 npm run build:chrome
 npm run build:firefox
+```
 
 ## Download
 
