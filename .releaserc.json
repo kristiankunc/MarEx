@@ -1,0 +1,24 @@
+{
+  "branches": ["main"],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "node scripts/set-version.mjs ${nextRelease.version} && npm run build:chrome && npm run build:firefox && (cd dist/chrome && zip -r ../../extension-chrome.zip .) && (cd dist/firefox && zip -r ../../extension-firefox.zip .)"
+      }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "successComment": false,
+        "failComment": false,
+        "assets": [
+          { "path": "extension-chrome.zip", "label": "Chrome extension" },
+          { "path": "extension-firefox.zip", "label": "Firefox extension" }
+        ]
+      }
+    ]
+  ]
+}
